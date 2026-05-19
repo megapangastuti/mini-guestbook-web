@@ -23,7 +23,11 @@ function GuestBookPage() {
   };
 
   return (
-    <div className="min-h-screen bg-center flex items-center justify-center" style={{ backgroundImage: `url(${bgOffice})` }}>
+    <div className="min-h-screen bg-center flex flex-col items-center" style={{ backgroundImage: `url(${bgOffice})` }}>
+      <div>
+        <h1 className="text-5xl font-bold mb-2 text-white text-center">Digital Guestbook</h1>
+        <h2 className="text-lg text-white text-center">Welcome. Please complete the form below to record your visit.</h2>
+      </div>
       <div
         className="items-center justify-center w-full
 					max-w-md
@@ -35,7 +39,6 @@ function GuestBookPage() {
 					border-white/20
 					shadow-2xl flex flex-col"
       >
-        <h1 className="text-3xl font-bold mb-9">Login</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col gap-4">
             <div className="flex flex-row items-center gap-2 p-2 border-b-blue-950 border-b-2">
