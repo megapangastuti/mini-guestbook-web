@@ -1,11 +1,10 @@
 import { Icon } from "@iconify/react";
-import Card from "../../organisms/Table/Card/Card";
+import Card from "../../organisms/Card/Card";
 import DashboardTable from "../../organisms/Table/DashboardTable";
 
 function DashboardPage() {
   const today = new Date();
 
-  // Formats to: "Month Day, Year" (e.g., May 18, 2026)
   const formattedDate = today.toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
